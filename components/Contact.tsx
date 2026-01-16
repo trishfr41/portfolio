@@ -43,27 +43,27 @@ export default function Contact() {
     <section
       ref={sectionRef}
       id="contact"
-      className="min-h-screen flex items-center justify-center px-6 py-20"
+      className="min-h-screen flex items-center justify-center px-4 sm:px-6 py-12 sm:py-20"
     >
       <div
         className={`max-w-3xl w-full space-y-8 transition-all duration-1000 ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
         }`}
       >
-        <h2 className="text-3xl md:text-4xl font-semibold text-white mb-12">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-white mb-8 md:mb-12">
           Contact
         </h2>
-        <p className="text-lg text-zinc-400 leading-relaxed mb-8">
+        <p className="text-base sm:text-lg text-zinc-400 leading-relaxed mb-6 sm:mb-8">
           Always open to interesting conversations, collaborations, or just saying hello.
         </p>
-        <div className="flex flex-wrap gap-6">
+        <div className="flex flex-wrap gap-4 sm:gap-6">
           {links.map((link, index) => (
             <a
               key={index}
               href={link.href}
               target={link.external ? '_blank' : undefined}
               rel={link.external ? 'noopener noreferrer' : undefined}
-              className="group relative text-lg text-zinc-300 hover:text-cyan-400 
+              className="group relative text-base sm:text-lg text-zinc-300 hover:text-cyan-400 
                        transition-colors duration-200 inline-flex items-center gap-2"
             >
               <span>{link.label}</span>

@@ -55,33 +55,33 @@ export default function Skills() {
     <section
       ref={sectionRef}
       id="skills"
-      className="min-h-screen flex items-center justify-center px-6 py-20"
+      className="min-h-screen flex items-center justify-center px-4 sm:px-6 py-12 sm:py-20"
     >
       <div
-        className={`max-w-4xl w-full space-y-12 transition-all duration-1000 ${
+        className={`max-w-4xl w-full space-y-8 md:space-y-12 transition-all duration-1000 ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
         }`}
       >
-        <h2 className="text-3xl md:text-4xl font-semibold text-white mb-12">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-white mb-8 md:mb-12">
           Skills
         </h2>
-        <div className="grid gap-10 md:grid-cols-2">
+        <div className="grid gap-6 sm:gap-8 md:gap-10 grid-cols-1 md:grid-cols-2">
           {skillGroups.map((group, index) => (
             <div
               key={index}
-              className="space-y-4"
+              className="space-y-3 sm:space-y-4"
               style={{
                 transitionDelay: `${index * 100}ms`,
               }}
             >
-              <h3 className="text-lg font-medium text-cyan-400 mb-3">
+              <h3 className="text-base sm:text-lg font-medium text-cyan-400 mb-2 sm:mb-3">
                 {group.category}
               </h3>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-1.5 sm:gap-2">
                 {group.items.map((item, itemIndex) => (
                   <span
                     key={itemIndex}
-                    className="text-sm px-4 py-2 rounded-md bg-zinc-800/50 text-zinc-300 
+                    className="text-xs sm:text-sm px-3 sm:px-4 py-1.5 sm:py-2 rounded-md bg-zinc-800/50 text-zinc-300 
                              border border-zinc-700 hover:border-cyan-500/50 hover:text-cyan-400 
                              transition-all duration-200 cursor-default"
                   >

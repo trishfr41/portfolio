@@ -1,5 +1,5 @@
 'use client';
-
+import { LayoutTextFlip } from '@/components/ui/layout-text-flip';
 import { useEffect, useRef, useState } from 'react';
 
 export default function About() {
@@ -31,17 +31,19 @@ export default function About() {
     <section
       ref={sectionRef}
       id="about"
-      className="min-h-screen flex items-center justify-center px-6 py-20"
+      className="min-h-screen flex items-center justify-center px-4 sm:px-6 py-12 sm:py-20"
     >
       <div
         className={`max-w-3xl w-full space-y-6 transition-all duration-1000 ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
         }`}
       >
-        <h2 className="text-3xl md:text-4xl font-semibold text-white mb-8">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-white mb-6 sm:mb-8">
           About
         </h2>
-        <div className="space-y-4 text-lg text-zinc-300 leading-relaxed">
+        <div className="space-y-4 text-base sm:text-lg text-zinc-300 leading-relaxed">
+          
+       
           <p>
             I'm driven by curiosity and a deep fascination with how systems work. 
             Whether it's code, architecture, or complex problems, I enjoy breaking 

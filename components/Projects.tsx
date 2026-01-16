@@ -65,38 +65,38 @@ export default function Projects() {
     <section
       ref={sectionRef}
       id="projects"
-      className="min-h-screen flex items-center justify-center px-6 py-20"
+      className="min-h-screen flex items-center justify-center px-4 sm:px-6 py-12 sm:py-20"
     >
       <div
-        className={`max-w-5xl w-full space-y-12 transition-all duration-1000 ${
+        className={`max-w-5xl w-full space-y-8 md:space-y-12 transition-all duration-1000 ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
         }`}
       >
-        <h2 className="text-3xl md:text-4xl font-semibold text-white mb-12">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-white mb-8 md:mb-12">
           Projects
         </h2>
-        <div className="grid gap-8 md:grid-cols-2">
+        <div className="grid gap-4 sm:gap-6 md:gap-8 grid-cols-1 md:grid-cols-2">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="group relative p-6 rounded-lg border border-zinc-800 bg-zinc-900/30 backdrop-blur-sm 
+              className="group relative p-4 sm:p-6 rounded-lg border border-zinc-800 bg-zinc-900/30 backdrop-blur-sm 
                          transition-all duration-300 hover:border-cyan-500/50 hover:shadow-[0_0_30px_rgba(6,182,212,0.15)] 
                          hover:-translate-y-1 cursor-pointer"
               style={{
                 transitionDelay: `${index * 100}ms`,
               }}
             >
-              <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-cyan-400 transition-colors">
+              <h3 className="text-lg sm:text-xl font-semibold text-white mb-2 sm:mb-3 group-hover:text-cyan-400 transition-colors">
                 {project.title}
               </h3>
-              <p className="text-zinc-400 mb-4 leading-relaxed">
+              <p className="text-sm sm:text-base text-zinc-400 mb-3 sm:mb-4 leading-relaxed">
                 {project.description}
               </p>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-1.5 sm:gap-2">
                 {project.tech.map((tech, techIndex) => (
                   <span
                     key={techIndex}
-                    className="text-xs px-3 py-1 rounded-full bg-zinc-800/50 text-zinc-300 
+                    className="text-xs px-2 sm:px-3 py-0.5 sm:py-1 rounded-full bg-zinc-800/50 text-zinc-300 
                              border border-zinc-700 group-hover:border-cyan-500/30 transition-colors"
                   >
                     {tech}

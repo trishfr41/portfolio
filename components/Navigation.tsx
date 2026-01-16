@@ -30,14 +30,14 @@ export default function Navigation() {
           : 'bg-transparent'
       }`}
     >
-      <div className="max-w-6xl mx-auto px-6 py-4">
-        <div className="flex justify-end gap-8">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-3 sm:py-4">
+        <div className="flex justify-end gap-3 sm:gap-4 md:gap-6 lg:gap-8 flex-wrap">
           {navItems.map((item) => (
             <a
               key={item.href}
               href={item.href}
-              className="text-sm text-zinc-400 hover:text-cyan-400 transition-colors 
-                       duration-200 relative group"
+              className="text-xs sm:text-sm text-zinc-400 hover:text-cyan-400 transition-colors 
+                       duration-200 relative group whitespace-nowrap"
             >
               {item.label}
               <span className="absolute bottom-0 left-0 w-0 h-px bg-cyan-400 

@@ -11,10 +11,10 @@ interface Activity {
 
 const extracurriculars: Activity[] = [
   {
-    title: 'Mentorship Program',
-    role: 'Technical Mentor',
-    description: 'Mentoring junior developers and engineering students, focusing on practical problem-solving, code quality, and career growth. Helping others navigate the early stages of their technical journey.',
-    period: '2023-Present',
+    title: 'Coding Club, IIT Dharwad',
+    role: 'Junior Secretary',
+    description: 'Served as Secretary of the Junior Coding Club, coordinating coding sessions, workshops, and peer-learning initiatives. Facilitated student engagement in competitive programming and problem-solving through structured activities and collaboration..',
+    period: '2025-Present',
   },
   {
     title: 'Tech Community Organizer',
@@ -63,40 +63,40 @@ export default function Extracurriculars() {
     <section
       ref={sectionRef}
       id="extracurriculars"
-      className="min-h-screen flex items-center justify-center px-6 py-20"
+      className="min-h-screen flex items-center justify-center px-4 sm:px-6 py-12 sm:py-20"
     >
       <div
-        className={`max-w-4xl w-full space-y-12 transition-all duration-1000 ${
+        className={`max-w-4xl w-full space-y-8 md:space-y-12 transition-all duration-1000 ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
         }`}
       >
-        <h2 className="text-3xl md:text-4xl font-semibold text-white mb-12">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-white mb-8 md:mb-12">
           Extracurriculars
         </h2>
-        <div className="space-y-8">
+        <div className="space-y-4 sm:space-y-6 md:space-y-8">
           {extracurriculars.map((activity, index) => (
             <div
               key={index}
-              className="group relative p-6 rounded-lg border border-zinc-800 bg-zinc-900/20 backdrop-blur-sm 
+              className="group relative p-4 sm:p-6 rounded-lg border border-zinc-800 bg-zinc-900/20 backdrop-blur-sm 
                          transition-all duration-300 hover:border-cyan-500/50 hover:shadow-[0_0_30px_rgba(6,182,212,0.15)] 
                          hover:-translate-y-1"
             >
-              <div className="flex justify-between items-start mb-3 flex-wrap gap-2">
-                <div>
-                  <h3 className="text-xl font-semibold text-white group-hover:text-cyan-400 transition-colors">
+              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-3 gap-2">
+                <div className="flex-1">
+                  <h3 className="text-lg sm:text-xl font-semibold text-white group-hover:text-cyan-400 transition-colors pr-2">
                     {activity.title}
                   </h3>
                   {activity.role && (
-                    <p className="text-sm text-cyan-400/80 mt-1">{activity.role}</p>
+                    <p className="text-xs sm:text-sm text-cyan-400/80 mt-1">{activity.role}</p>
                   )}
                 </div>
                 {activity.period && (
-                  <span className="text-sm text-cyan-400/70 font-medium">
+                  <span className="text-xs sm:text-sm text-cyan-400/70 font-medium whitespace-nowrap">
                     {activity.period}
                   </span>
                 )}
               </div>
-              <p className="text-zinc-400 leading-relaxed">
+              <p className="text-sm sm:text-base text-zinc-400 leading-relaxed">
                 {activity.description}
               </p>
             </div>
