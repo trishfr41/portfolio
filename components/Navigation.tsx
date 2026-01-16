@@ -6,6 +6,8 @@ const navItems = [
   { label: 'About', href: '#about' },
   { label: 'Projects', href: '#projects' },
   { label: 'Skills', href: '#skills' },
+  { label: 'Achievements', href: '#achievements' },
+  { label: 'Extracurriculars', href: '#extracurriculars' },
   { label: 'Contact', href: '#contact' },
 ];
 
@@ -24,7 +26,7 @@ export default function Navigation() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-zinc-950/80 backdrop-blur-md border-b border-zinc-800'
+          ? 'bg-[#1e1b4b]/80 backdrop-blur-md border-b border-purple-900/30'
           : 'bg-transparent'
       }`}
     >
