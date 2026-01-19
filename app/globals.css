@@ -18,14 +18,14 @@
 }
 
 html {
-  background: linear-gradient(135deg, #1e1b4b 0%, #4c1d95 100%);
+  background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
   background-attachment: fixed;
   color: #ededed;
   min-height: 100%;
 }
 
 body {
-  background: linear-gradient(135deg, #1e1b4b 0%, #4c1d95 100%);
+  background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
   background-attachment: fixed;
   color: #ededed;
   font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;

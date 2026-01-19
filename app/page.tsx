@@ -5,6 +5,7 @@ import About from '@/components/About';
 import Projects from '@/components/Projects';
 import Skills from '@/components/Skills';
 import Achievements from '@/components/Achievements';
+import CompetitiveProgramming from '@/components/CompetitiveProgramming';
 import Extracurriculars from '@/components/Extracurriculars';
 import Contact from '@/components/Contact';
 import Navigation from '@/components/Navigation';
@@ -35,6 +36,7 @@ export default function Home() {
         <Projects />
         <Skills />
         <Achievements />
+        <CompetitiveProgramming />
         <Extracurriculars />
         <Contact />
         <footer className="py-8 sm:py-12 px-4 sm:px-6 text-center text-xs sm:text-sm text-zinc-500 border-t border-zinc-800">

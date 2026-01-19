@@ -15,19 +15,9 @@ const achievements: Achievement[] = [
     year: '2025',
   },
   {
-    title: 'Technical Writing',
-    description: 'Published articles and documentation on systems architecture, performance optimization, and best practices in software engineering.',
-    year: '2023-2024',
-  },
-  {
-    title: 'Community Speaker',
-    description: 'Presented at tech meetups and conferences on topics including distributed systems, API design, and developer productivity.',
-    year: '2023',
-  },
-  {
-    title: 'Hackathon Winner',
-    description: 'Led teams to victory in multiple hackathons, building innovative solutions under time constraints with focus on clean architecture.',
-    year: '2022-2023',
+    title: 'CodeClash 2025 Rank 9',
+    description: 'Secured a top-10 finish among teams from premier institutes across India.',
+    year: '2025',
   },
 ];
 

@@ -17,15 +17,9 @@ const extracurriculars: Activity[] = [
     period: '2025-Present',
   },
   {
-    title: 'Tech Community Organizer',
-    role: 'Event Coordinator',
-    description: 'Organizing local tech meetups and study groups, bringing together developers to share knowledge, discuss emerging technologies, and build a stronger community.',
-    period: '2022-Present',
-  },
-  {
-    title: 'Volunteer Coding Instructor',
-    description: 'Teaching programming fundamentals to underrepresented groups, making technology education more accessible and inclusive. Creating curriculum and hands-on workshops.',
-    period: '2023',
+    title: 'Summer School at IIYM Kansas',
+    description: 'Attended a 2-week intensive summer school program at the International Institute of Young Musicians, Kansas, exploring advanced musical concepts and collaborative performance.',
+    period: '2018',
   },
   {
     title: 'Personal Projects & Experiments',

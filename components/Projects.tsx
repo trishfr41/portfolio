@@ -10,29 +10,9 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: 'Real-time Analytics Platform',
-    description: 'Built a high-performance analytics system processing millions of events with sub-second query response times. Designed with scalability and real-time insights in mind.',
-    tech: ['TypeScript', 'Node.js', 'PostgreSQL', 'Redis', 'Docker'],
-  },
-  {
-    title: 'Design System & Component Library',
-    description: 'Created a comprehensive design system from scratch, enabling consistent UI development across teams. Includes reusable components, documentation, and design tokens.',
-    tech: ['React', 'TypeScript', 'Tailwind CSS', 'Storybook'],
-  },
-  {
-    title: 'API Gateway & Microservices Architecture',
-    description: 'Architected and implemented a distributed system with service mesh capabilities, authentication, and rate limiting. Reduced latency by 40% and improved system reliability.',
-    tech: ['Go', 'Kubernetes', 'gRPC', 'Istio', 'Prometheus'],
-  },
-  {
-    title: 'Developer Tools & CLI',
-    description: 'Built developer productivity tools that automate common workflows and improve DX. Adopted by multiple teams and significantly reduced onboarding time.',
-    tech: ['Python', 'Rust', 'CLI', 'Git', 'CI/CD'],
-  },
-  {
-    title: 'Experimental Web Project',
-    description: 'A playground for exploring new web technologies, performance optimization techniques, and creative coding. Where ideas become experiments.',
-    tech: ['Next.js', 'WebGL', 'React', 'TypeScript'],
+    title: 'Adaptive Intraday Quantitative Trading Strategy (Hidden-Type Market)',
+    description: 'Designed a profitable intraday trading strategy for a hidden-type market, where the underlying market regime was not directly observable. Used momentum oscillators and mean-reversion signals, combined with regime indicators such as the Hurst Exponent, to infer market behaviour from price action. Applied feature selection using Mutual Information to identify informative, non-linear predictors while avoiding redundant signals. Incorporated adaptive risk controls and drawdown-based exits to maintain stability across changing market conditions. Achieved Sharpe 2.6, Calmar 10, and 3% max drawdown, securing Gold at Inter IIT Tech Meet 14.0 (Quant PS – High Prep).',
+    tech: ['Python', 'Quantitative Finance'],
   },
 ];
 

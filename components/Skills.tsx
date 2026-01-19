@@ -22,7 +22,7 @@ const skillGroups: SkillGroup[] = [
   },
   {
     category: 'Areas of Interest',
-    items: ['Systems Design', 'Performance Optimization', 'Developer Experience', 'Open Source'],
+    items: ['Machine Learning', 'Deep Learning', 'Artificial Intelligence', 'Neural Networks'],
   },
 ];
 

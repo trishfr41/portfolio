@@ -9,9 +9,9 @@ interface Link {
 }
 
 const links: Link[] = [
-  { label: 'Email', href: 'mailto:trisham@example.com' },
-  { label: 'GitHub', href: 'https://github.com', external: true },
-  { label: 'LinkedIn', href: 'https://linkedin.com', external: true },
+  { label: 'Email', href: 'mailto:trisham.bepari@outlook.com' },
+  { label: 'GitHub', href: 'https://github.com/trishfr41', external: true },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/trisham-bepari-7218b02b2/', external: true },
 ];
 
 export default function Contact() {
